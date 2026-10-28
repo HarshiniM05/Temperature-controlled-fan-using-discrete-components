@@ -1,59 +1,49 @@
-# Temperature-controlled-fan-using-discrete-components
-Temperature-based automatic fan controller implemented using discrete electronic components, demonstrating analog circuit design and transistor-based control.
 
-# NTC-Based Fan Controller Using Discrete Components
+# NTC-Based Automatic Fan Controller Using LM358
 
 ## Overview
-This project implements an automatic fan controller using an NTC (Negative Temperature Coefficient) thermistor and discrete electronic components. The circuit responds to temperature variations and controls the fan without using a microcontroller.
-
-An NTC thermistor decreases its resistance as temperature increases, enabling temperature-dependent control of the fan.
-
-## Objectives
-- Design a temperature-sensitive fan control circuit.
-- Understand the characteristics of an NTC thermistor.
-- Implement fan control using discrete electronic components.
-- Explore practical applications of analog electronics.
+This project is an automatic temperature-based fan controller designed using an NTC thermistor, LM358 operational amplifier, and discrete electronic components. The circuit detects temperature variations and controls fan operation without using a microcontroller.
 
 ## Components Used
 - NTC Thermistor
+- LM358 Operational Amplifier
 - Transistors
 - Resistors
 - DC Fan
 - DC Power Supply
 - Connecting Wires
 
-*Update the list according to the exact components used in your circuit.*
-
 ## Working Principle
-1. The NTC thermistor senses changes in the surrounding temperature.
-2. As the temperature increases, the resistance of the NTC thermistor decreases.
-3. This resistance variation changes the voltage in the sensing circuit.
-4. The transistor-based control stage responds to the voltage change and controls the fan.
-5. As the temperature decreases, the circuit responds accordingly.
+1. The NTC thermistor senses the surrounding temperature.
+2. When the temperature increases, the resistance of the NTC thermistor decreases.
+3. This resistance change produces a variation in the sensing circuit voltage.
+4. The LM358 acts as a comparator to compare the sensing voltage with a reference voltage.
+5. When the temperature reaches the set threshold, the output changes state and controls the transistor switching stage.
+6. The transistor drives the fan according to the control signal.
 
-The exact switching temperature and fan behavior depend on the circuit design and component values.
+The switching temperature can be adjusted by changing the reference voltage, depending on the circuit design.
 
 ## Features
-- Automatic temperature-dependent fan control
-- NTC thermistor-based temperature sensing
-- Discrete-component implementation
+- Automatic temperature-based fan control
+- NTC thermistor for temperature sensing
+- LM358-based voltage comparison
+- Discrete-component control circuit
 - No microcontroller or programming required
-- Simple and cost-effective circuit design
 
 ## Applications
 - Electronic equipment cooling
 - Temperature-controlled ventilation
-- Basic thermal management systems
+- Thermal management systems
 - Analog electronics projects
 
 ## Learning Outcomes
 - Understanding NTC thermistor characteristics
-- Learning transistor switching and biasing
-- Analyzing temperature-dependent voltage changes
-- Gaining practical experience in analog circuit design
+- Learning LM358 op-amp applications
+- Understanding comparator circuits and transistor switching
+- Practical experience in analog circuit design
 
 ## Conclusion
-This project demonstrates temperature-dependent fan control using an NTC thermistor and discrete electronic components. It provides practical knowledge of temperature sensing, transistor-based control, and analog circuit implementation without requiring a microcontroller.
+This project demonstrates an automatic fan control system using an NTC thermistor and LM358 operational amplifier. It provides practical experience in temperature sensing, voltage comparison, and transistor-based control using discrete electronic components.
 
 ## Author
-Harshini M 
+Harshini
